@@ -27,6 +27,8 @@ function ask() {
 
 if (site =! null) {
   Object.keys(websites).every(function(key) {
+    console.log(key.name)
+    console.log(ans)
       if (key.name == ans) {
         alert("Site found! disguising site...")
         changeFavicon(key.icon)
