@@ -14,6 +14,7 @@ function ask() {
 if (site =! null) {
   Object.keys(websites).every(function(key) {
       console.log(key)
+      return true
   })
 }
 }
