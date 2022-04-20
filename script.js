@@ -27,7 +27,7 @@ function ask() {
   console.log(ans, site)
 if (site =! null) {
   Object.keys(websites).every(function(key) {
-    console.log(key)
+    console.log(websites[key])
     console.log(ans)
       if (key.name == ans) {
         alert("Site found! disguising site...")
