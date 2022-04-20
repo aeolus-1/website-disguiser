@@ -15,6 +15,6 @@ function ask() {
 if (site =! null) {
   Object.keys(parsedData).every(function(key) {
       console.log(key)
-  }
+  })
 }
 }
