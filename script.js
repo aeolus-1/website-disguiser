@@ -5,6 +5,7 @@ const websites = {
 "googleDrive":{"name":"google drive", "text":"My Drive", "icon":"https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png"},
 "camMath":{"name":"cambridge math", "text":"Cambridge Essential Math", "icon":"https://emac.hotmaths.com.au/users/branding/emacs/img/favicon.ico"}
 }
+document.head = document.head || document.getElementsByTagName('head')[0];
 
 function changeFavicon(src) {
  var link = document.createElement('link'),
