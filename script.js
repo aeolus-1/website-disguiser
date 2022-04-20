@@ -17,3 +17,5 @@ if (site =! null) {
   })
 }
 }
+
+ask()
