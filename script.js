@@ -30,6 +30,7 @@ if (site =! null) {
       if (websites[key].name == ans) {
         alert("Site found! disguising site...")
         changeFavicon(websites[key].icon)
+        document.title = websites[key].text
         return false
       } else {
         return true
