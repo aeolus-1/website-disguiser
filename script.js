@@ -24,7 +24,7 @@ const amountOfSites = 5
 function ask() {
   var site = prompt("Please insert a website (A list of websites can be found on the github page)")
   var ans = site.toLowerCase()
-
+  console.log(ans, site)
 if (site =! null) {
   Object.keys(websites).every(function(key) {
     console.log(key.name)
@@ -32,7 +32,7 @@ if (site =! null) {
       if (key.name == ans) {
         alert("Site found! disguising site...")
         changeFavicon(key.icon)
-        return true
+        return false
       } else {
         return true
       }
