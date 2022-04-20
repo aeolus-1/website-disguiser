@@ -5,16 +5,35 @@ const websites = {
 "googleDrive":{"name":"google drive", "text":"My Drive", "icon":"https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png"},
 "camMath":{"name":"cambridge math", "text":"Cambridge Essential Math", "icon":"https://emac.hotmaths.com.au/users/branding/emacs/img/favicon.ico"}
 }
-const favicon = document.querySelector('[rel=icon]');
 
+function changeFavicon(src) {
+ var link = document.createElement('link'),
+     oldLink = document.getElementById('dynamic-favicon');
+ link.id = 'dynamic-favicon';
+ link.rel = 'shortcut icon';
+ link.href = src;
+ if (oldLink) {
+  document.head.removeChild(oldLink);
+ }
+ document.head.appendChild(link);
+}
+
+const favicon = document.querySelector('[rel=icon]');
+const amountOfSites = 5
 function ask() {
   var site = prompt("Please insert a website (A list of websites can be found on the github page)")
   var ans = site.toLowerCase()
 
 if (site =! null) {
   Object.keys(websites).every(function(key) {
-      console.log(key)
-      return true
+      if (key.name == ans) {
+        alert("Site found! disguising site...")
+        changeFavicon(key.icon)
+        return true
+      } else {
+        return true
+      }
+      
   })
 }
 }
