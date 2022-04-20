@@ -5,8 +5,6 @@ now you might be thinking "bUt HoW wIlL iT dIsGuIsE iT" it will change the favic
 
 paste this into the console to inject the script. keep in mind some websites will not let you inject scripts
 
-NOTE: i havent finished the script injecting will cause a error probably
-
 ```js
 fetch("https://raw.githubusercontent.com/LX8369/website-disguiser/main/script.js").then((r)=>{r.text().then((d)=>{eval(d)})})
 ```
