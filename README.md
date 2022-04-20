@@ -8,3 +8,11 @@ paste this into the console to inject the script. keep in mind some websites wil
 ```js
 fetch("https://raw.githubusercontent.com/LX8369/website-disguiser/main/script.js").then((r)=>{r.text().then((d)=>{eval(d)})})
 ```
+List of sites:
+Google
+Google Drive
+Google Classroom
+Outlook
+Cambridge Math
+
+Feel free to create a pull request if you want to add more sites
