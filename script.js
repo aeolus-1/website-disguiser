@@ -7,3 +7,5 @@ camMath:{name:"cambridge math", text:"Cambridge Essential Math", icon:'https://e
 }
 
 const favicon = document.querySelector('[rel=icon]');
+
+input("Please insert a website (A list of websites can be found on the github page")
