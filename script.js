@@ -21,7 +21,7 @@ function changeFavicon(src) {
 
 const favicon = document.querySelector('[rel=icon]');
 const amountOfSites = 5
-const count = 0
+var count = 0
 function ask() {
   var site = prompt("Please insert a website (A list of websites can be found on the github page)")
   var ans = site.toLowerCase()
